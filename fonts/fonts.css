@@ -1,0 +1,26 @@
+/* Licensed fonts. Drop the files in this folder, then uncomment the url() line of each font.
+   The url() lines stay commented until the files exist, so the site never requests a missing file.
+   Until then the fallbacks in assets/css/style.css are used (Arial for headers, Georgia for titles).
+
+   Expected files (rename yours to match, or edit the paths):
+     fonts/TTHovesPro-ExpandedMedium.woff2   TT Hoves Pro Expanded, weight 500 (headers)
+     fonts/Tercia-Regular.woff2              Tercia, weight 400 (titles)
+   Benne (body, weight 400) is free and loads from Google Fonts in index.html. */
+
+@font-face {
+  font-family: "TT Hoves Pro Expanded";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local("TT Hoves Pro Expanded Medium"), local("TTHovesPro-ExpandedMedium")
+    /* , url("TTHovesPro-ExpandedMedium.woff2") format("woff2") */;
+}
+
+@font-face {
+  font-family: "Tercia";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local("Tercia Regular"), local("Tercia-Regular")
+    /* , url("Tercia-Regular.woff2") format("woff2") */;
+}

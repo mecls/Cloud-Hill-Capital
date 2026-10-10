@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cloud Hill Capital</title>
+<meta name="description" content="Cloud Hill Capital. Placeholder description, to be defined.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<script>document.documentElement.classList.add('js')</script>
+
+<!-- Fonts. Benne comes from Google Fonts. TT Hoves Pro Expanded and Tercia are licensed:
+     drop the files in /fonts and follow fonts/README.md (one uncomment per font). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Benne&display=swap">
+<link rel="stylesheet" href="fonts/fonts.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="preload" as="image" href="assets/img/logo.webp" fetchpriority="high">
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#manifesto">Skip to content</a>
+
+<header class="site-header" id="top">
+  <a class="brand" href="#home" data-link="home">
+    <!-- Header logo: a small copy of the home logo (128px, for sharp edges at this size) -->
+    <img class="brand__mark" src="assets/img/logo-mark.webp" alt="" width="128" height="128">
+    <span class="brand__name">Cloud Hill Capital</span>
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+    <span class="menu-toggle__line" aria-hidden="true"></span>
+    <span class="menu-toggle__line" aria-hidden="true"></span>
+  </button>
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <ul class="site-nav__list">
+      <li><a class="site-nav__link" href="#home" data-link="home">Home</a></li>
+      <li><a class="site-nav__link" href="#manifesto" data-link="manifesto">Manifesto</a></li>
+      <li><a class="site-nav__link" href="#team" data-link="team">Team</a></li>
+      <li><a class="site-nav__link" href="#contact" data-link="contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Page indicator (Audeo): one bar per section; the current one grows and its name slides in. -->
+<div class="pager" aria-hidden="true">
+  <div class="pager__item" data-for="home"><span class="pager__bar"></span></div>
+  <div class="pager__item" data-for="manifesto"><span class="pager__bar"></span><span class="pager__label-wrap"><span class="pager__label">Manifesto</span></span></div>
+  <div class="pager__item" data-for="team"><span class="pager__bar"></span><span class="pager__label-wrap"><span class="pager__label">Team</span></span></div>
+  <div class="pager__item" data-for="contact"><span class="pager__bar"></span><span class="pager__label-wrap"><span class="pager__label">Contact</span></span></div>
+</div>
+
+<main id="main">
+
+  <!-- 1. HOME -->
+  <section class="home" id="home" aria-labelledby="home-title">
+    <h1 class="visually-hidden" id="home-title">Cloud Hill Capital</h1>
+    <div class="home__mark">
+      <div class="home__spin">
+        <!-- LOGO: to change it, swap this src (square image, mark centred on the exact centre of the image).
+             main.js stacks copies of it behind this one to give the turning mark its depth. -->
+        <img class="home__logo" src="assets/img/logo.webp" alt="Cloud Hill Capital logo" width="694" height="694" decoding="async" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. MANIFESTO: mission statement, then the link to the full manifesto -->
+  <section class="section manifesto" id="manifesto" aria-labelledby="manifesto-title">
+    <div class="manifesto__inner">
+      <p class="eyebrow">Manifesto</p>
+      <h2 class="manifesto__title" id="manifesto-title">To ensure the capital building superintelligence is invested in a future that serves humanity</h2>
+      <div class="manifesto__body">
+        <p>To own and strengthen the companies building the foundations of superintelligence, so that the most powerful technology in history stays abundant, secure and under human control.</p>
+      </div>
+      <p class="manifesto__more">
+        <a class="manifesto__link" href="manifesto.html">Read the manifesto</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- 3. TEAM. Each person is one <li>: name, role, portrait and bio all live here.
+       Portrait: replace the <svg class="portrait"> with <img class="portrait" src="assets/team/NAME.webp" alt="">
+       (white line drawing on transparent or black, 3:4) and delete the [Portrait] tag. -->
+  <section class="section team" id="team" aria-labelledby="team-title">
+    <h2 class="team__title" id="team-title">Team</h2>
+
+    <div class="team__stage">
+      <ul class="team__grid" role="list">
+        <li class="person">
+          <button class="person__btn" type="button" aria-expanded="false">
+            <span class="person__art"><img class="portrait" src="assets/team/bernardo-mendes-de-almeida.webp" alt="" width="900" height="1228" loading="lazy" decoding="async"></span>
+            <span class="person__name">Bernardo Mendes de Almeida</span>
+            <span class="person__role">General Partner</span>
+            <span class="person__icon" aria-hidden="true"></span>
+          </button>
+          <div class="person__more" hidden><p class="person__bio">[Short introduction to be written.]</p></div>
+        </li>
+        <li class="person">
+          <button class="person__btn" type="button" aria-expanded="false">
+            <span class="person__art"><svg class="portrait" viewBox="0 0 300 400" aria-hidden="true"><use href="#portrait-1"/></svg><span class="person__tag" aria-hidden="true">[Portrait]</span></span>
+            <span class="person__name">Gabriel Korish</span>
+            <span class="person__role">General Partner</span>
+            <span class="person__icon" aria-hidden="true"></span>
+          </button>
+          <div class="person__more" hidden><p class="person__bio">[Short introduction to be written.]</p></div>
+        </li>
+        <li class="person">
+          <button class="person__btn" type="button" aria-expanded="false">
+            <span class="person__art"><svg class="portrait" viewBox="0 0 300 400" aria-hidden="true"><use href="#portrait-2"/></svg><span class="person__tag" aria-hidden="true">[Portrait]</span></span>
+            <span class="person__name">Dale Vine</span>
+            <span class="person__role">General Partner</span>
+            <span class="person__icon" aria-hidden="true"></span>
+          </button>
+          <div class="person__more" hidden><p class="person__bio">[Short introduction to be written.]</p></div>
+        </li>
+        <li class="person">
+          <button class="person__btn" type="button" aria-expanded="false">
+            <span class="person__art"><svg class="portrait" viewBox="0 0 300 400" aria-hidden="true"><use href="#portrait-3"/></svg><span class="person__tag" aria-hidden="true">[Portrait]</span></span>
+            <span class="person__name">John Bivins</span>
+            <span class="person__role">General Partner</span>
+            <span class="person__icon" aria-hidden="true"></span>
+          </button>
+          <div class="person__more" hidden><p class="person__bio">[Short introduction to be written.]</p></div>
+        </li>
+        <li class="person">
+          <button class="person__btn" type="button" aria-expanded="false">
+            <span class="person__art"><img class="portrait" src="assets/team/bruno-erckmam.webp" alt="" width="900" height="1228" loading="lazy" decoding="async"></span>
+            <span class="person__name">Bruno Erckmam</span>
+            <span class="person__role">Head of Operations &amp; Marketing</span>
+            <span class="person__icon" aria-hidden="true"></span>
+          </button>
+          <div class="person__more" hidden>
+            <p class="person__bio">Bruno Erckmam is the Head of Operations &amp; Marketing at Cloud Hill Capital. Over six years he has built go-to-market strategy across ecommerce, fintech, financial services and professional services, developing a sharp instinct for how companies find and hold the attention of the people who matter most to them. His work sits where most firms have a gap: between the quality of what they do and the reach of who knows about it. Bruno closes that gap.</p>
+            <p class="person__bio">Prior to Cloud Hill Capital, he led marketing and revenue operations at Fundraisr, an AI-powered operating system for investor relations teams, and held a senior role at Avalanche Capital, a capital advisory firm operating across private markets.</p>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Team intro (desktop and tablet). Filled from the clicked person by main.js. -->
+      <div class="intro" id="intro" role="dialog" aria-modal="false" aria-labelledby="intro-name" hidden>
+        <div class="intro__art" aria-hidden="true"><div class="intro__art-inner"></div></div>
+        <div class="intro__panel">
+          <div class="intro__info">
+            <h3 class="intro__name" id="intro-name"></h3>
+            <p class="intro__role"></p>
+            <div class="intro__bio"></div>
+          </div>
+          <button class="intro__close" type="button" aria-label="Close introduction">
+            <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 1l10 10M11 1L1 11"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CONTACT: one centred column. Replace each [bracket] with the real value
+       (for emails, change both the mailto: and the text). -->
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="contact__inner">
+      <h2 class="visually-hidden" id="contact-title">Contact</h2>
+      <p class="contact__city">Based in [City, Country]</p>
+
+      <dl class="contact__list">
+        <div class="contact__item">
+          <dt>General inquiries</dt>
+          <dd><a href="mailto:info@[domain]">info@[domain]</a></dd>
+        </div>
+        <div class="contact__item">
+          <dt>Partner &amp; LP relations</dt>
+          <dd><a href="mailto:partners@[domain]">partners@[domain]</a></dd>
+        </div>
+        <div class="contact__item">
+          <dt>Press &amp; speaking</dt>
+          <dd><a href="mailto:press@[domain]">press@[domain]</a></dd>
+        </div>
+        <div class="contact__item">
+          <dt>Follow us</dt>
+          <!-- X and Newsletter: turn into links once they exist, or delete them. -->
+          <dd><a href="https://www.linkedin.com/company/cloudhillcapital/" target="_blank" rel="noopener">LinkedIn</a><span class="contact__dot" aria-hidden="true"> · </span><span class="contact__todo">[X]</span><span class="contact__dot" aria-hidden="true"> · </span><span class="contact__todo">[Newsletter]</span></dd>
+        </div>
+      </dl>
+
+      <p class="contact__foot">&copy; 2026 Cloud Hill Capital</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- Placeholder portraits: white line drawings, one symbol per person (replace with real drawings). -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <g id="portrait-body" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M150 40 C104 40 96 92 108 132 C116 158 134 176 150 176 C166 176 184 158 192 132 C204 92 196 40 150 40Z" stroke-width="1.6" opacity=".9"/>
+      <path d="M130 112 C134 108 140 108 144 112 M158 112 C162 108 168 108 172 112" stroke-width="2"/>
+      <path d="M150 118 C148 130 146 138 152 142" stroke-width="1.4" opacity=".7"/>
+      <path d="M138 156 C146 160 156 160 164 156" stroke-width="1.8"/>
+      <path d="M120 172 C118 188 114 196 98 204 C60 222 34 260 28 330 L30 392" stroke-width="2.2"/>
+      <path d="M180 172 C182 188 186 196 202 204 C240 222 266 260 272 330 L270 392" stroke-width="2.2"/>
+      <path d="M120 172 L150 250 L180 172" stroke-width="1.8"/>
+      <path d="M150 250 L116 392 M150 250 L184 392" stroke-width="1.6" opacity=".75"/>
+      <path d="M70 240 C84 300 90 350 88 392 M230 240 C216 300 210 350 212 392" stroke-width="5" opacity=".55"/>
+    </g>
+    <g id="portrait-glasses" fill="none" stroke="#fff" stroke-width="2"><rect x="108" y="84" width="34" height="24" rx="6"/><rect x="156" y="84" width="34" height="24" rx="6"/><path d="M142 94 H156"/></g>
+  </defs>
+  <symbol id="portrait-1" viewBox="0 0 300 400"><use href="#portrait-body"/><path fill="#fff" opacity=".92" d="M100 74 C98 44 124 30 150 34 C178 34 200 52 196 80 C184 58 160 50 138 56 C118 58 106 62 100 74Z"/><use href="#portrait-glasses"/></symbol>
+  <symbol id="portrait-2" viewBox="0 0 300 400"><use href="#portrait-body"/><path fill="#fff" opacity=".92" d="M98 66 C100 40 130 26 156 36 C184 40 204 60 194 84 C188 62 168 54 144 58 C120 54 104 52 98 66Z"/></symbol>
+  <symbol id="portrait-3" viewBox="0 0 300 400"><use href="#portrait-body"/><path fill="#fff" opacity=".92" d="M102 78 C98 52 120 36 148 36 C176 36 198 54 194 80 C182 64 160 58 144 62 C122 60 108 66 102 78Z"/><use href="#portrait-glasses"/></symbol>
+</svg>
+
+</body>
+</html>
