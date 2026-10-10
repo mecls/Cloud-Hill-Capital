@@ -539,7 +539,6 @@ img, svg { display: block; max-width: 100%; }
   color: var(--muted);
 }
 .contact__item dd { margin: 8px 0 0; font-size: clamp(17px, 1.25vw, 19px); line-height: 1.5; overflow-wrap: anywhere; }
-.contact__dot, .contact__todo { color: var(--muted); }
 .contact__foot {
   margin-top: clamp(56px, 9vh, 96px);
   font: 500 clamp(10px, .76vw, 11px)/1.3 var(--font-head);
