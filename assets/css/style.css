@@ -22,7 +22,7 @@
   --header-h: 68px;
 
   /* Logo size on the home screen: 40% of the screen height, never wider than 72% of the screen width. */
-  --logo-size: clamp(140px, min(40vh, 72vw), 520px);
+  --logo-size: clamp(120px, min(34vh, 61vw), 440px);
   /* Logo turn, Thrive: one full turn on the vertical axis every 24s, linear. Depth of the stacked mark. */
   --logo-turn: 24s;
   --logo-depth: calc(var(--logo-size) * .035);
@@ -35,7 +35,7 @@
   --ease-nav: cubic-bezier(.17, .67, .83, .67);
 }
 @supports (height: 1svh) {
-  :root { --logo-size: clamp(140px, min(40svh, 72vw), 520px); }
+  :root { --logo-size: clamp(120px, min(34svh, 61vw), 440px); }
 }
 @media (max-width: 767px) {
   :root {
@@ -122,6 +122,7 @@ img, svg { display: block; max-width: 100%; }
   white-space: nowrap;
 }
 .brand__mark { flex: none; width: 1.6em; height: 1.6em; }
+.brand__name { font-size: .9em; }
 .site-nav__list {
   display: flex;
   gap: clamp(18px, 1.8vw, 28px);

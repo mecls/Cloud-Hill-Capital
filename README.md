@@ -31,7 +31,7 @@ python3 -m http.server 8000
 | Mission statement | `index.html`, section `#manifesto` |
 | Manifesto text | `manifesto.html`. Each chapter is a `<section class="mf-ch">`; the sidebar links are in `<nav class="mf-toc">`. |
 | People, roles, bios | `index.html`, one `<li class="person">` per person. The bio is the `<p class="person__bio">` inside it. |
-| Portraits | Replace `<svg class="portrait">…</svg>` with `<img class="portrait" src="assets/team/NAME.webp" alt="">` (3:4 white line drawing) and delete the `[Portrait]` tag |
+| Portraits | `assets/team/NAME.webp`, 900×1228, ink drawing on black. Point the `<img class="portrait">` in that person's `<li>` at it. |
 | City, emails, LinkedIn | `index.html`, section `#contact` (change the `mailto:` and LinkedIn `href` too) |
 | Favicon | `assets/img/favicon.png`, `assets/img/apple-touch-icon.png` |
 

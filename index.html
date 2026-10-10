@@ -82,8 +82,7 @@
   </section>
 
   <!-- 3. TEAM. Each person is one <li>: name, role, portrait and bio all live here.
-       Portrait: replace the <svg class="portrait"> with <img class="portrait" src="assets/team/NAME.webp" alt="">
-       (white line drawing on transparent or black, 3:4) and delete the [Portrait] tag. -->
+       Portraits are 900x1228 WebP files in assets/team/ (ink drawing on black). -->
   <section class="section team" id="team" aria-labelledby="team-title">
     <h2 class="team__title" id="team-title">Team</h2>
 
@@ -102,7 +101,7 @@
         </li>
         <li class="person">
           <button class="person__btn" type="button" aria-expanded="false">
-            <span class="person__art"><svg class="portrait" viewBox="0 0 300 400" aria-hidden="true"><use href="#portrait-1"/></svg><span class="person__tag" aria-hidden="true">[Portrait]</span></span>
+            <span class="person__art"><img class="portrait" src="assets/team/gabriel-korish.webp" alt="" width="900" height="1228" loading="lazy" decoding="async"></span>
             <span class="person__name">Gabriel Korish</span>
             <span class="person__role">Partner</span>
             <span class="person__icon" aria-hidden="true"></span>
@@ -200,25 +199,6 @@
   </section>
 
 </main>
-
-<!-- Placeholder portraits: white line drawings, one symbol per person (replace with real drawings). -->
-<svg class="sprite" aria-hidden="true" focusable="false">
-  <defs>
-    <g id="portrait-body" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M150 40 C104 40 96 92 108 132 C116 158 134 176 150 176 C166 176 184 158 192 132 C204 92 196 40 150 40Z" stroke-width="1.6" opacity=".9"/>
-      <path d="M130 112 C134 108 140 108 144 112 M158 112 C162 108 168 108 172 112" stroke-width="2"/>
-      <path d="M150 118 C148 130 146 138 152 142" stroke-width="1.4" opacity=".7"/>
-      <path d="M138 156 C146 160 156 160 164 156" stroke-width="1.8"/>
-      <path d="M120 172 C118 188 114 196 98 204 C60 222 34 260 28 330 L30 392" stroke-width="2.2"/>
-      <path d="M180 172 C182 188 186 196 202 204 C240 222 266 260 272 330 L270 392" stroke-width="2.2"/>
-      <path d="M120 172 L150 250 L180 172" stroke-width="1.8"/>
-      <path d="M150 250 L116 392 M150 250 L184 392" stroke-width="1.6" opacity=".75"/>
-      <path d="M70 240 C84 300 90 350 88 392 M230 240 C216 300 210 350 212 392" stroke-width="5" opacity=".55"/>
-    </g>
-    <g id="portrait-glasses" fill="none" stroke="#fff" stroke-width="2"><rect x="108" y="84" width="34" height="24" rx="6"/><rect x="156" y="84" width="34" height="24" rx="6"/><path d="M142 94 H156"/></g>
-  </defs>
-  <symbol id="portrait-1" viewBox="0 0 300 400"><use href="#portrait-body"/><path fill="#fff" opacity=".92" d="M100 74 C98 44 124 30 150 34 C178 34 200 52 196 80 C184 58 160 50 138 56 C118 58 106 62 100 74Z"/><use href="#portrait-glasses"/></symbol>
-</svg>
 
 </body>
 </html>
